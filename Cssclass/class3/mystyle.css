@@ -1,0 +1,25 @@
+h1{
+    color:red;
+}
+#container{
+    border:5px solid green;
+    padding:20px;
+    border-radius:20px;
+    margin-bottom:60px;
+}
+
+ul li{
+    border-left: 7px solid orange;
+    height:50px;
+    width:200px;
+    text-align:center;
+    line-height:50px;
+    background-color:green;
+    color:white;
+    margin:10px;
+
+}
+ul li:hover{
+    background:red;
+    border-radius:10px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .image{
+            position:relative;
+            /* background:black;
+            opacity:0.5; */
+        }
+        .foodbox{
+            position: absolute;
+          height:auto;
+          width:400px;
+          background:grey;
+          top:50%;
+          opacity: 0.8;
+          left:50%;
+          transform: translate(-50%, -50%);
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .foodbox div{
+            height:100px;
+            color:black;
+            text-align:center;
+            line-height: 100px;
+            font-size:40px;
+            font-weight: bold;
+           border:0px solid #ccc;
+           border-bottom-width: 1px;
+        }
+
+        .foodbox div a{
+            display: block;
+            text-decoration: none;
+            color:#ccc;
+        }
+        .foodbox div a:hover{
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="../food.jpg"/>
+        <div class="foodbox">
+            <div>
+               <a href="vegfood.html">veg</a>
+            </div>
+            <div>
+               <a href="non-veg.html">Non-veg</a>
+            </div>
+            <div><a href="stater.html">Stater</a></div>
+        </div>
+    </div>
+    
+</body>
+</html>

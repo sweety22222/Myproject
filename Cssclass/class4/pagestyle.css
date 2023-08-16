@@ -1,0 +1,30 @@
+p,div{
+    color:red;
+}
+
+#user{
+    border:1px solid red;
+    width:100%;
+    padding:10px;
+}
+#user tbody{
+    border:1px solid green;
+    height:40px;
+    text-align:center;
+    border-radius:0px;
+}
+#user tbody tr td{
+    border:1px solid rgb(51, 0, 255);
+    height:40px;
+    text-align:center;
+    border-radius:5px
+}
+
+#user tbody tr:nth-child(odd){
+    background:#eee;
+    color:#222;
+}
+#user tbody tr:nth-child(even){
+    background:#fff;
+    color:#000;
+}

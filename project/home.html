@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #pageback{
+            height:70vh;
+            width:100vw;
+            background: url(ing.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        #res{
+            width:100vw;
+            text-align: center;
+            padding:20px 10px;
+            color:#003366;
+            font-weight: bold;
+            box-shadow: 0px 3px 4px #ccc;
+            margin-bottom:20px;
+        }
+        #top-items{
+            /* width:70vw; */
+            /* height:90vh; */
+            margin:50px auto;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:30px;
+        }
+        #top-heading{
+            text-align:center;
+            font-size:40px;
+            margin-top:40px;
+
+        }
+        #top-items div:{
+            box-shadow:0px 3px 3px #bbb;
+            padding:10px;
+            height:200px;
+           
+            background:#eee;
+            border-radius:10px;
+            
+            
+            /* (../ use for external file) */
+        }
+        #top-items div:nth-child(1){
+            
+            width:40wh;
+            height:40vh;
+            background:url(../paneertikka.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #top-items div:nth-child(2){
+            width:40wh;
+            height:40vh;
+            background:url(../noodles.jpg);
+            background-position:center;
+            background-size:cover;
+            overflow:hidden;
+            
+        }
+        #top-items div:nth-child(3){
+            width:40wh;
+            height:40vh;
+            background:url(../pizza.jpg);
+            background-position: center;
+            background-size:cover;
+            overflow:hidden;
+           
+        }
+
+    
+        #top-items div h1{
+            text-align:center;
+            color:#4477aa;
+            
+        }
+        @media screen and (max-width:740px) {
+            #top-items{
+                grid-template-columns: 1fr;
+            }
+            
+        }
+        #menuitem a:hover{
+            /* background-color:pink;   */
+            color:red; 
+        }
+        #menuitem a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body bgcolor="white">
+    <header>
+        <h1 id="res">Restaurant</h1>
+    </header>
+    <div id="pageback">
+    </div>
+    <div id="top-heading">
+        Our Top Three Items
+    </div>
+    <div id="top-items">
+        <div>
+            <h1>Paneer Tikka</h1>
+            <h5 style="text-align:center">Free Home Delivery</h5>
+        </div>
+
+        <div>
+            <h1>Noodles</h1>
+        </div>
+
+        <div>
+            <h1>Pizza</h1>
+        </div>
+
+
+    </div>
+    
+       
+</body>
+</html>

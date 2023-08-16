@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #container
+        {
+            width:80%;
+            height:auto;
+            border:1px solid green;
+            margin:0px auto;
+            background:#0044aa;
+            border-radius:5px;
+        }
+        #container ul li{
+            height:35px;
+            line-height: 35px;
+            color:#eee;
+            margin:0px 10px;
+            
+            color:red;
+            
+
+        }
+        #container ul li ul{
+            display:none;
+            
+            
+        }
+       
+        #container ul li:hover ul{
+            display:flex;
+            flex-direction: column;
+            background:green;
+        }
+        /* flex is used to arrange the items  */
+        #container ul {
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+            list-style: none;
+            padding:0px;
+            margin:0px;
+        }
+
+        .mybox{
+            height:300px;
+            width:300px;
+            margin:40px 50px ;
+            background:linear-gradient(red,orange,green);
+            border-radius:30%;
+            transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .mybox:hover{
+            transform: rotate(360deg);
+            border-radius: 50%;
+            height:200px;
+            width:200px;
+            background: radial-gradient(orange,green,blue);
+        }
+    </style>
+</head>
+<body>
+    <h1>Drop Down Menu</h1>
+    <div id="container">
+         <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services
+                <ul>
+                    <li>Service1</li>
+                    <li>Service2</li>
+                    <li>Service3</li>
+                </ul>
+            </li>
+            <li>Contact</li>
+            <li>Blog
+                <ul>
+                    <li>Service1</li>
+                    <li>Service2</li>
+                    <li>Service3</li>
+                </ul>
+            </li>
+         </ul>
+    </div>
+
+    <div class="mybox">
+        
+    </div>
+</body>
+</html>
